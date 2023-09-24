@@ -8,6 +8,54 @@ body{
     color: var(--NAVY-BLUE);
 }
 
-/* button{
+nav a.logo-link {
+    text-decoration: none;
+    color: inherit;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.16; /* multiplier */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+nav span{
+        color: var(--IRIS);
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.16; /* multiplier */
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+}
+
+ul.main-header-menu{
+    list-style-type: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul.main-header-menu li a{
+    text-decoration: none;
+    color: inherit;
+  
+}
+
+ul.main-header-ctas{
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.main-header-ctas-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button{
     cursor: pointer;
-} */
+}
