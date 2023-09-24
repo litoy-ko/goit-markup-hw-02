@@ -1,0 +1,13 @@
+:root{
+    --NAVY-BLUE:#2E2F42;
+    --IRIS:#4D5AE5;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--NAVY-BLUE);
+}
+
+/* button{
+    cursor: pointer;
+} */
