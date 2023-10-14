@@ -4,50 +4,44 @@
     --SLATE: #434455;
     --WHITE: #FFF;
     --CLOUD: #F4F4FD;
-    --TOMATO: #ff6347;
+    --CORNFLOWER: #E7E9FC;
 
 
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--NAVY-BLUE);
+    
 }
+/* GENERAL STYLING------------------------ */
 
-/* header css----------------------------------------------- */
-a.logo-link-header {
-    text-decoration: none;
-    color: inherit;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.16;
-    /* multiplier */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-}
-
-a.logo-link-header .web-header {
-    color: var(--IRIS);
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.16;
-    /* multiplier */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-}
-
-ul.main-header-menu {
+.list {
     list-style-type: none;
     color: inherit;
     margin: 0;
     padding: 0;
 }
 
-ul.main-header-menu li a {
+.bg-dark {
+    background-color: var(--NAVY-BLUE);
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 18px; 
+    font-weight: 800;
+    line-height: 1.16;
+    /* multiplier */
+    letter-spacing: 0.54px;
+}
+
+.logo-web {
+    color: var(--IRIS);
+    
+}
+
+.link {
     text-decoration: none;
     color: inherit;
     font-size: 16px;
@@ -58,59 +52,48 @@ ul.main-header-menu li a {
     letter-spacing: 0.32px;
 }
 
-ul.main-header-menu li a.active {
+.link.active {
     color: var(--IRIS);
 }
 
-ul.main-header-ctas {
-    list-style-type: none;
-    margin-top: 0;
-    padding: 0;
-}
-
-ul.main-header-ctas li a {
-    text-decoration: none;
-    color: var(--SLATE);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    /* multiplier */
-    letter-spacing: 0.32px;
-}
-
-a.state:hover, a.state:focus{
+link.state:hover,
+link.state:focus {
     color: var(--TOMATO);
-    
-    > .web-header {
+
+    >.logo-web {
         color: var(--TOMATO);
     }
 
-    > .web-footer {
+    >.web-footer {
         color: var(--TOMATO);
     }
 }
+/* END OF GENERAL STYLING----------------------------- */
 
-
-/* main css------------------------------------------ */
-/* section studio  */
-.order-studio {
-    background-color: var(--NAVY-BLUE);
+/* header styling----------------------------------------------- */
+.logo-studio-nav {
+    color: var(--NAVY-BLUE);
 }
+/* end of header styling---------------------------- */
 
-.order-studio h1 {
+
+
+/* Hero section styling  */
+
+.hero-text {
     color: var(--WHITE);
     text-align: center;
     font-size: 56px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.071;
     /* multiplier */
     letter-spacing: 1.12px;
+    text-transform: uppercase;
 }
 
-.order-studio .main-button {
+.hero-btn {
     cursor: pointer;
+    border: none;
     border-radius: 4px;
     background: var(--IRIS);
     /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
@@ -124,15 +107,13 @@ a.state:hover, a.state:focus{
     letter-spacing: 0.64px
 }
 
-button.state:hover, button.state:focus{
+.hero-btn.state:hover, .hero-btn.state:focus{
     background: var(--TOMATO);
 }
+/* end of hero section styling---------------- */
+
 
 /* section benefits  */
-ul.benefits-menu {
-    list-style-type: none;
-    padding: 0;
-}
 
 .benefits ul li h3 {
     color: var(--NAVY-BLUE);
@@ -209,43 +190,18 @@ ul.benefits-menu {
 
 
 
-/* footer css----------------------------------------- */
-
-footer {
-    background-color: var(--NAVY-BLUE);
-}
-
-a.logo-link-footer {
-    text-decoration: none;
+/* footer styling----------------------------------------- */
+.logo-studio-footer {
     color: var(--CLOUD);
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.16;
-    /* multiplier */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
 }
 
-a.logo-link-footer .web-footer {
-    color: var(--IRIS);
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.16;
-    /* multiplier */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-}
-
-footer p {
+.footer-text {
     color: var(--CLOUD);
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.5;
     /* multiplier */
     letter-spacing: 0.32px;
 }
+
+/* end of footer styling--------------------------------- */
