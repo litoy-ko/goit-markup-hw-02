@@ -5,19 +5,17 @@
     --WHITE: #FFF;
     --CLOUD: #F4F4FD;
     --CORNFLOWER: #E7E9FC;
-
-
+    --ocean: #404bbf;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    
 }
 /* GENERAL STYLING------------------------ */
 
 .list {
     list-style-type: none;
-    color: inherit;
+    /* color: inherit; */
     margin: 0;
     padding: 0;
 }
@@ -38,41 +36,77 @@ body {
 
 .logo-web {
     color: var(--IRIS);
-    
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
+    text-decoration: none;   
+}
+
+.section-title {
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     /* multiplier */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
 }
 
-.link.active {
-    color: var(--IRIS);
+.p-dark {
+    color: var(--SLATE);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.50;
+    /* 150% */
+    letter-spacing: 0.32px; 
 }
 
-link.state:hover,
-link.state:focus {
-    color: var(--TOMATO);
-
-    >.logo-web {
-        color: var(--TOMATO);
-    }
-
-    >.web-footer {
-        color: var(--TOMATO);
-    }
+.about h3,
+.team h3 {
+    color: var(--NAVY-BLUE);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    /* 120% */
+    letter-spacing: 0.4px;
 }
+
+
+
 /* END OF GENERAL STYLING----------------------------- */
 
 /* header styling----------------------------------------------- */
 .logo-studio-nav {
     color: var(--NAVY-BLUE);
+}
+
+.nav-link {
+    color: var(--NAVY-BLUE);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* multiplier */
+    letter-spacing: 0.32px; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--ocean)
+}
+
+.active {
+    color: var(--ocean);
+}
+
+.contacts {
+    color: var(--SLATE);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    /* multiplier */
+    letter-spacing: 0.32px;
 }
 /* end of header styling---------------------------- */
 
@@ -92,7 +126,6 @@ link.state:focus {
 }
 
 .hero-btn {
-    cursor: pointer;
     border: none;
     border-radius: 4px;
     background: var(--IRIS);
@@ -100,95 +133,17 @@ link.state:focus {
     color: var(--WHITE);
     font-family: inherit;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     /* multiplier */
     letter-spacing: 0.64px
 }
 
-.hero-btn.state:hover, .hero-btn.state:focus{
-    background: var(--TOMATO);
+.hero-btn:hover, .hero-btn:focus{
+    cursor: pointer;
+    background: var(--ocean);
 }
 /* end of hero section styling---------------- */
-
-
-/* section benefits  */
-
-.benefits ul li h3 {
-    color: var(--NAVY-BLUE);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.20;
-    /* multiplier */
-    letter-spacing: 0.4px;
-}
-
-.benefits ul li p {
-    color: var(--SLATE);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    /* multiplier% */
-    letter-spacing: 0.32px;
-}
-
-/* section what we do  */
-.what-we-do h2 {
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    /* multiplier */
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-}
-
-.what-we-do ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* section our team  */
-.our-team h2 {
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    /* multiplier */
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-}
-
-.our-team ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.our-team ul li h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.20;
-    /* 120% */
-    letter-spacing: 0.4px;
-}
-
-.our-team ul li p {
-    color: var(--SLATE);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.50;
-    /* 150% */
-    letter-spacing: 0.32px;
-}
-
-
 
 /* footer styling----------------------------------------- */
 .logo-studio-footer {
