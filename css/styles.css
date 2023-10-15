@@ -26,12 +26,20 @@ body {
 
 .logo {
     text-transform: uppercase;
-    font-family: Raleway;
+    font-family: "Raleway";
     font-size: 18px; 
     font-weight: 800;
     line-height: 1.16;
     /* multiplier */
     letter-spacing: 0.54px;
+}
+
+.logo:hover .logo-web {
+    color: green;
+}
+
+.logo .logo-web:hover {
+    color: var(--iris);
 }
 
 .logo-web {
